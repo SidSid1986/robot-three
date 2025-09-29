@@ -129,10 +129,10 @@ onMounted(() => {
   // 加载模型
   const loader = new GLTFLoader();
   loader.load(
-    new URL("../assets/1.glb", import.meta.url).href,
+    // new URL("../assets/1.glb", import.meta.url).href,
     // new URL("../assets/2.glb", import.meta.url).href,
     // new URL("../assets/3.glb", import.meta.url).href,
-    // new URL("../assets/4.glb", import.meta.url).href,
+    new URL("../assets/4.glb", import.meta.url).href,
     // new URL("../assets/5.glb", import.meta.url).href,
     (gltf) => {
       materialManager.cloneMaterials(gltf.scene);
